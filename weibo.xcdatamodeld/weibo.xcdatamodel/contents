@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Accounts" syncable="YES"/>
+    <entity name="Comments" syncable="YES"/>
+    <entity name="Common" syncable="YES"/>
+    <entity name="Favorites" syncable="YES"/>
+    <entity name="Friendships" syncable="YES"/>
+    <entity name="Location" syncable="YES"/>
+    <entity name="Place" syncable="YES"/>
+    <entity name="Remind" syncable="YES"/>
+    <entity name="Search" syncable="YES"/>
+    <entity name="Statuses" representedClassName="Statuses" syncable="YES">
+        <attribute name="bmiddle_pic" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="geo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="original_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Suggestions" syncable="YES"/>
+    <entity name="Tags" syncable="YES"/>
+    <entity name="Trends" syncable="YES"/>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="avatar_large" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bi_followers_count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favourites_count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="followers_count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="friends_count" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="online_status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="profile_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="province" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="screen_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statuses_count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="status" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Users" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Statuses" positionX="-551" positionY="-189" width="128" height="195"/>
+        <element name="Users" positionX="-351" positionY="-186" width="128" height="300"/>
+        <element name="Comments" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Friendships" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Accounts" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Favorites" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Trends" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Tags" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Search" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Suggestions" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Remind" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Common" positionX="295" positionY="297" width="128" height="45"/>
+        <element name="Place" positionX="135" positionY="279" width="128" height="45"/>
+        <element name="Location" positionX="277" positionY="72" width="128" height="45"/>
+    </elements>
+</model>
