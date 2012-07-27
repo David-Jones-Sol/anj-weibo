@@ -175,7 +175,7 @@
 			scrollView.contentInset = UIEdgeInsetsZero;
 		}
     }
-    [self.tableView reloadData];
+   // [self.tableView reloadData];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate

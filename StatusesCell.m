@@ -24,8 +24,9 @@
 -(void)setupLayout:(Status *)status
 {
   //  Status *retweetedStatus = status.retweeted_status;
-  //  [self.statusText layoutIfNeeded];
-    
+//    [self.statusText layoutIfNeeded];
+//    [self.statusImageView layoutIfNeeded];
+//    [self.retweetedView layoutIfNeeded];
     //主text高
     CGRect frame = self.statusText.frame;
     frame.size = self.statusText.contentSize;
@@ -77,6 +78,8 @@
         self.statusImageView.hidden = NO;
         [self.statusImageView setImageWithURL:[NSURL URLWithString: status.thumbnail_pic]];
         
+    }else {
+        self.statusImageView.hidden = YES;
     }
       
     
@@ -96,9 +99,9 @@
 //        }
         self.retweetedView.hidden = NO;
         
-        
-        
-    }   
+    }else {
+        self.retweetedView.hidden = YES;
+    }
     
     [self setupLayout:status];
 }
